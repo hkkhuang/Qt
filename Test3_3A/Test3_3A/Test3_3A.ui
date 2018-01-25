@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>Test3_3AClass</class>
+ <widget class="QWidget" name="Test3_3AClass" >
+  <property name="objectName" >
+   <string notr="true">Test3_3AClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Test3_3A</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="Test3_3A.qrc"/>
+ </resources>
+ <connections/>
+</UI>
