@@ -5,7 +5,7 @@
 
 //构造函数生成控件
 MyWin::MyWin(QWidget *parent)
-	: QWidget(parent)
+	: QWidget(parent) //继承基类是QWidget
 {
 	m_button = new QPushButton(this);
 	m_button->setText("Ok");
