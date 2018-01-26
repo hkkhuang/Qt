@@ -16,6 +16,10 @@ MyWin::MyWin(QWidget *parent)
 	QSizePolicy p2 = m_textEdit->sizePolicy(); //+		sh2	{ width = 256, height = 192 }	QSize
 	QSizePolicy::Policy vp2 = p2.verticalPolicy(); //		vp2	Expanding (7)	QSizePolicy::Policy
 
+	//设置lineEdit的Policy
+	m_lineEdit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding); //横向还是Expanding,将纵向也改为Expanding
+
+
 	//创建布局器
 	QVBoxLayout* layout = new QVBoxLayout(this);
 	layout->addWidget(m_lineEdit);
