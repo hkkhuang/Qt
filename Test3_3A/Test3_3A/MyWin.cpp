@@ -3,6 +3,7 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 
+//构造函数生成控件
 MyWin::MyWin(QWidget *parent)
 	: QWidget(parent)
 {
