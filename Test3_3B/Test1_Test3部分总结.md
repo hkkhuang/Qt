@@ -277,7 +277,7 @@ virtual QSize sizeHint() const;
 
 stretch factor:在同一个方向上,两个控件都有拉伸的需求(Expanding),布局器需要合理的分配这个需求.
 
-如A,B两个控件都是Expanding,stretch是1,1     那么在拉伸的时候分配比例就是1:1
+如A,B两个控件都是Expanding,stretch是1,1     那么在拉伸的时候剩余空间的分配比例就是1:1
 
 > 注:可以在`"Qt Designer"`中选择控件,直接操作`"Property Editor"`中的属性值,`"sizePolicy-Horizontal Stretch"`,`"sizePolicy-Vertical Stretch"`,`"minimumSize"`,`"maximunSize"`.
 
