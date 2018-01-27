@@ -10,6 +10,7 @@ class Test4_1A : public QMainWindow
 public:
 	Test4_1A(QWidget *parent = Q_NULLPTR);
 
+//添加成员函数
 private slots: 
 int OnShowClicked(bool checked);
 
