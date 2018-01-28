@@ -26,6 +26,9 @@ int Test5_3A::OnBtnOKClicked()
 	int index = ui.cmboxLang->currentIndex();//当前选项
 	QString data = ui.cmboxLang->itemData(index).toString();
 	QString text = ui.cmboxLang->itemText(index);
+
+	QString value = ui.cmboxLang->currentText();
+	QMessageBox::information(this, "OK", "Value:" + value);
 	return 0;
 }
 

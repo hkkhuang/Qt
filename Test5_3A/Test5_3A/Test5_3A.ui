@@ -23,6 +23,9 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="btnOK">
     <property name="geometry">

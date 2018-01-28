@@ -44,6 +44,7 @@ public:
         cmboxLang = new QComboBox(centralWidget);
         cmboxLang->setObjectName(QStringLiteral("cmboxLang"));
         cmboxLang->setGeometry(QRect(30, 60, 251, 51));
+        cmboxLang->setEditable(true);
         btnOK = new QPushButton(centralWidget);
         btnOK->setObjectName(QStringLiteral("btnOK"));
         btnOK->setGeometry(QRect(340, 70, 112, 34));
