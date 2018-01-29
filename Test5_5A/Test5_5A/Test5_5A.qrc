@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="img">
+    <file>Resources/octocat.png</file>
+  </qresource>
+</RCC>
