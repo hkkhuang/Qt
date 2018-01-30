@@ -1,5 +1,4 @@
-// Test6_1_CharacterConversion.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
-//
+ï»¿// Test6_1_CharacterConversion.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 
 #include "stdafx.h"
 #include <stdlib.h>
@@ -11,21 +10,21 @@
 int test()
 {
 	//0xc6,0xbf ,0xbb ,0xc9 ,0xbf ,0xc9 ,0x00 
-	char text_gbk[] = "»Æ¿É¿É"; //×Ö·û´®×ÖÃæ³£Á¿
+	char text_gbk[] = "é»„å¯å¯"; //å­—ç¬¦ä¸²å­—é¢å¸¸é‡
 	wchar_t text_utf16[256] = { 0 };
 
 	int n = MultiByteToWideChar(CP_ACP, 0,
 		text_gbk, strlen(text_gbk),
 		text_utf16, 256);
 
-	printf("½á¹û:%d ¸ö¿í×Ö·û \n", n);
+	printf("ç»“æœ:%d ä¸ªå®½å­—ç¬¦ \n", n);
 	return 0;
 }
 
 //GBK-->UTF-16-->UTF-8
 int test2()
 {
-	char text_gbk[] = "»Æ¿É¿É"; //×Ö·û´®×ÖÃæ³£Á¿
+	char text_gbk[] = "é»„å¯å¯"; //å­—ç¬¦ä¸²å­—é¢å¸¸é‡
 	wchar_t text_utf16[256] = { 0 };
 
 	int n1 = MultiByteToWideChar(CP_ACP, 0,
@@ -35,7 +34,7 @@ int test2()
 	char text_utf8[256];
 
 	int n2 = WideCharToMultiByte(CP_UTF8, 0, text_utf16, n1, text_utf8,256,NULL,0);
-	printf("½á¹û:%d ¸ö¿í×Ö·û \n", n2);
+	printf("ç»“æœ:%d ä¸ªå®½å­—ç¬¦ \n", n2);
 	return 0;
 }
 
