@@ -1,4 +1,4 @@
-ï»¿#include <QString>
+#include <QString>
 #include <QTextCodec>
 #include <string>
 
@@ -8,7 +8,7 @@ class GBK
 {
 public:
 	//QString(Unicode) --> std::string(GBK)
-	//QTextCodec ç”¨äºæ‰‹å·¥è½¬æ¢ç¼–ç (QStringå†…éƒ¨è°ƒç”¨æ­¤ç±»)
+	//QTextCodec ÓÃÓÚÊÖ¹¤×ª»»±àÂë(QStringÄÚ²¿µ÷ÓÃ´ËÀà)
 	static string FromUnicode(const QString& qstr)
 	{
 		QTextCodec* pCodec = QTextCodec::codecForName("gb2312"); //GBK
