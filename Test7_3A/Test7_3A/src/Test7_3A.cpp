@@ -6,7 +6,7 @@ Test7_3A::Test7_3A(QWidget *parent)
 {
 	ui.setupUi(this);
 
-	//创建文件
+	//鍒涘缓鏂囦欢
 	FILE* fp = fopen("123.txt", "wb");
 	fwrite("hello", 1, 5, fp);
 	fclose(fp);
