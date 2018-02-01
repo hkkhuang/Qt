@@ -1,15 +1,16 @@
-#include <string>
+ï»¿#include <string>
 using std::string;
 
+//Change Directory
 class CurrentDir
 {
 public:
-	// µÃµ½exeÎÄ¼şËùÔÚµÄÄ¿Â¼ 
+	// å¾—åˆ°exeæ–‡ä»¶æ‰€åœ¨çš„ç›®å½• 
 	static string exeLocation(char seperator = '\\');
 
-	// ÇĞ»»µ½Ä¿±êÎ»ÖÃ 
+	// åˆ‡æ¢åˆ°ç›®æ ‡ä½ç½® 
 	static void cd(const string& targetDir);
 
-	// ÇĞ»»µ½exeËùÓĞµÄÎ»ÖÃ
+	// åˆ‡æ¢åˆ°exeæ‰€æœ‰çš„ä½ç½®
 	static void cd();
 };
