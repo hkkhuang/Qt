@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	//设置当前目录
+	//璁剧疆褰撳墠鐩綍
 	CurrentDir::cd();
 
 	QApplication a(argc, argv);
