@@ -1,4 +1,4 @@
-#include "Test7_3A.h"
+ï»¿#include "Test7_3A.h"
 #include <stdio.h>
 
 Test7_3A::Test7_3A(QWidget *parent)
@@ -6,7 +6,7 @@ Test7_3A::Test7_3A(QWidget *parent)
 {
 	ui.setupUi(this);
 
-	//´´½¨ÎÄ¼þ
+	//åˆ›å»ºæ–‡ä»¶
 	FILE* fp = fopen("123.txt", "wb");
 	fwrite("hello", 1, 5, fp);
 	fclose(fp);

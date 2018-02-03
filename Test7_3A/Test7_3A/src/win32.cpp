@@ -1,4 +1,4 @@
-
+ï»¿
 #ifdef _WIN32
 
 #include <stdio.h>
@@ -10,13 +10,13 @@
 
 string CurrentDir::exeLocation(char seperator)
 {
-	// µÃµ½exeÎÄ¼şµÄÈ«Â·¾¶
+	// å¾—åˆ°exeæ–‡ä»¶çš„å…¨è·¯å¾„
 	char buf[512] = { 0 };
 	GetModuleFileNameA(NULL, buf, 512);
 
-	// Ìæ»»·Ö¸ô·û
+	// æ›¿æ¢åˆ†éš”ç¬¦
 	string filePath = buf;
-	if (seperator != '\\') //windowsÏÂÄ¬ÈÏÊÇ·´Ğ±Ïß
+	if (seperator != '\\') //windowsä¸‹é»˜è®¤æ˜¯åæ–œçº¿
 	{
 		for (int i = 0; i < filePath.length(); i++)
 		{
@@ -25,7 +25,7 @@ string CurrentDir::exeLocation(char seperator)
 		}
 	}
 
-	// È¥³ıÎÄ¼şÃû£¬µÃµ½´¿Ä¿Â¼ 
+	// å»é™¤æ–‡ä»¶åï¼Œå¾—åˆ°çº¯ç›®å½• 
 	int pos = filePath.rfind(seperator);
 	string cd = filePath.substr(0, pos + 1);
 	return cd;
