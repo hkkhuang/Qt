@@ -16,7 +16,7 @@ string CurrentDir::exeLocation(char seperator)
 
 	// 替换分隔符
 	string filePath = buf;
-	if (seperator != '\\') //windows下默认是反斜线
+	if (seperator != '\\') //windows下默认分隔符是反斜线
 	{
 		for (int i = 0; i < filePath.length(); i++)
 		{
