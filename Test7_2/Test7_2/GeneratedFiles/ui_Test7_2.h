@@ -45,7 +45,7 @@ public:
     {
         if (Test7_2Class->objectName().isEmpty())
             Test7_2Class->setObjectName(QStringLiteral("Test7_2Class"));
-        Test7_2Class->resize(854, 648);
+        Test7_2Class->resize(642, 409);
         centralWidget = new QWidget(Test7_2Class);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayout = new QVBoxLayout(centralWidget);
@@ -80,7 +80,7 @@ public:
         Test7_2Class->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Test7_2Class);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 854, 30));
+        menuBar->setGeometry(QRect(0, 0, 642, 23));
         Test7_2Class->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Test7_2Class);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

@@ -14,9 +14,10 @@ Test7_2::Test7_2(QWidget *parent)
 	connect(ui.btnSave, SIGNAL(clicked()), this, SLOT(OnBtnSaveClicked()));
 }
 
+//【打开】
 int Test7_2::OnBtnOpenCLicked()
 {
-	//选择要打开的文件
+	//选择要打开的文件  //返回文件路径
 	QString filepath = QFileDialog::getOpenFileName(
 		this,//父窗口
 		GBK::ToUnicode("选择文件") //标题Caption
@@ -30,6 +31,7 @@ int Test7_2::OnBtnOpenCLicked()
 		
 		//打开文件,读取内容 
 		FILE* fp = fopen(gbk_name.c_str(), "rb");
+
 		//文件的大小
 		fseek(fp, 0, SEEK_END); 
 		int filesize = ftell(fp);
