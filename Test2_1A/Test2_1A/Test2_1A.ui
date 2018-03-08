@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>730</width>
-    <height>524</height>
+    <width>346</width>
+    <height>185</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>50</y>
+      <x>20</x>
+      <y>20</y>
       <width>112</width>
       <height>34</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QCheckBox" name="checkBox">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>150</y>
+      <x>190</x>
+      <y>20</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>230</y>
+      <x>170</x>
+      <y>90</y>
       <width>113</width>
       <height>25</height>
      </rect>
@@ -53,8 +53,8 @@
    <widget class="QDoubleSpinBox" name="doubleSpinBox">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>300</y>
+      <x>20</x>
+      <y>90</y>
       <width>76</width>
       <height>25</height>
      </rect>
@@ -66,8 +66,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>730</width>
-     <height>30</height>
+     <width>346</width>
+     <height>23</height>
     </rect>
    </property>
   </widget>

@@ -42,25 +42,25 @@ public:
     {
         if (Test2_1AClass->objectName().isEmpty())
             Test2_1AClass->setObjectName(QStringLiteral("Test2_1AClass"));
-        Test2_1AClass->resize(730, 524);
+        Test2_1AClass->resize(346, 185);
         centralWidget = new QWidget(Test2_1AClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(130, 50, 112, 34));
+        pushButton->setGeometry(QRect(20, 20, 112, 34));
         checkBox = new QCheckBox(centralWidget);
         checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(140, 150, 105, 22));
+        checkBox->setGeometry(QRect(190, 20, 105, 22));
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(130, 230, 113, 25));
+        lineEdit->setGeometry(QRect(170, 90, 113, 25));
         doubleSpinBox = new QDoubleSpinBox(centralWidget);
         doubleSpinBox->setObjectName(QStringLiteral("doubleSpinBox"));
-        doubleSpinBox->setGeometry(QRect(140, 300, 76, 25));
+        doubleSpinBox->setGeometry(QRect(20, 90, 76, 25));
         Test2_1AClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Test2_1AClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 730, 30));
+        menuBar->setGeometry(QRect(0, 0, 346, 23));
         Test2_1AClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Test2_1AClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

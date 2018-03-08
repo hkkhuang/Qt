@@ -8,7 +8,7 @@ class LoginDlg : public QDialog
 	Q_OBJECT
 
 public:
-	LoginDlg(const char* name, QWidget *parent = Q_NULLPTR);
+	LoginDlg(const char* name, QWidget *parent = Q_NULLPTR); //在定义时规定要传入一个初始值 const char* name
 	~LoginDlg();
 
 //添加槽

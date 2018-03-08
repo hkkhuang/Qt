@@ -41,11 +41,11 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         btnLogin = new QPushButton(centralWidget);
         btnLogin->setObjectName(QStringLiteral("btnLogin"));
-        btnLogin->setGeometry(QRect(110, 50, 112, 34));
+        btnLogin->setGeometry(QRect(200, 60, 112, 34));
         Test7_1AClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Test7_1AClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 30));
+        menuBar->setGeometry(QRect(0, 0, 600, 23));
         Test7_1AClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Test7_1AClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

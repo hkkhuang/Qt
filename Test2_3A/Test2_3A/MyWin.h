@@ -16,7 +16,7 @@ public:
 
 private:
 	//
-	//QPushButton* m_button; //创建成员变量 表示按钮对象
+	QPushButton* m_button; //创建成员变量 表示按钮对象
 	QLineEdit* m_lineEdit;
 	QPlainTextEdit* m_textEdit;
 };
