@@ -12,6 +12,7 @@ class Test7_4A : public QDialog
 public:
 	Test7_4A(QWidget *parent = Q_NULLPTR);
 
+//添加槽
 private slots:
 	int OnBtnStartSearchClicked();
 	int OnStartSearch();

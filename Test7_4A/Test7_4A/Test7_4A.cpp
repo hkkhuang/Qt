@@ -23,6 +23,7 @@ int Test7_4A::OnBtnStartSearchClicked()
 	return 0;
 }
 
+//【开始搜索】按钮具体行为
 int Test7_4A::OnStartSearch()
 {
 	QString text = m_SearchWindow->ui.txtSearch->text();

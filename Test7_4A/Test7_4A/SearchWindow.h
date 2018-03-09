@@ -5,7 +5,7 @@
 
 class SearchWindow : public QWidget
 {
-	Q_OBJECT
+	Q_OBJECT //必须包含
 
 public:
 	SearchWindow(QWidget *parent = Q_NULLPTR);
