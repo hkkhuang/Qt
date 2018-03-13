@@ -5,7 +5,7 @@
 
 class Test7_3A : public QWidget
 {
-	Q_OBJECT
+	Q_OBJECT //
 
 public:
 	Test7_3A(QWidget *parent = Q_NULLPTR);

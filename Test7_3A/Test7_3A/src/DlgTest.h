@@ -5,7 +5,7 @@
 
 class DlgTest : public QDialog
 {
-	Q_OBJECT
+	Q_OBJECT //
 
 public:
 	DlgTest(QWidget *parent = Q_NULLPTR);

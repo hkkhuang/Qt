@@ -8,6 +8,7 @@
 #include <windows.h>
 #include "CurrentDir.h"
 
+//获取路径
 string CurrentDir::exeLocation(char seperator)
 {
 	// 得到exe文件的全路径

@@ -1,5 +1,5 @@
 #include "DlgTest.h"
-
+//
 DlgTest::DlgTest(QWidget *parent)
 	: QDialog(parent)
 {

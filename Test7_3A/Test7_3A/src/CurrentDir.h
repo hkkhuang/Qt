@@ -1,7 +1,7 @@
 ﻿#include <string>
 using std::string;
 
-//Change Directory
+//Change Directory 获取目录
 class CurrentDir
 {
 public:
