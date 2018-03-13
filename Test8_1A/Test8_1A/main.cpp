@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// 包含windows的头文件，用于测试Sleep
+
 #include <winsock2.h>
+
+// 包含windows的头文件，用于测试Sleep
 #include <windows.h>
 
 
@@ -20,7 +22,7 @@ int main()
 	// 主控循环
 	while (1)
 	{
-		printf("> ");
+		printf(">>> ");
 		char cmdline[128]; // 命名行
 		gets_s(cmdline);
 

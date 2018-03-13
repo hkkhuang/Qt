@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
 {
 	//设置当前目录
 	CurrentDir::cd();
+
 	QApplication a(argc, argv);
 	Test7_3A w;
 	w.show();

@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="Test7_3A">
+    <qresource prefix="/Test7_3A">
+        <file>Test7_3A.qrc</file>
     </qresource>
 </RCC>
