@@ -1,18 +1,14 @@
-﻿
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
-
 #include <winsock2.h>
-
 // 包含windows的头文件，用于测试Sleep
 #include <windows.h>
-
 
 int HandleCommand()
 {
 	printf("begin .............");
-	::Sleep(10 * 1000); // 单位：毫秒
+	::Sleep(10 * 1000); // 单位：毫秒  模拟处理10s
 	printf(".............end \n");
 	return 0;
 }
