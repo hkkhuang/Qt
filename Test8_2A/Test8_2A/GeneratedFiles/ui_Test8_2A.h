@@ -41,11 +41,15 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         labelTime = new QLabel(centralWidget);
         labelTime->setObjectName(QStringLiteral("labelTime"));
-        labelTime->setGeometry(QRect(200, 40, 81, 18));
+        labelTime->setGeometry(QRect(180, 90, 171, 71));
+        QFont font;
+        font.setFamily(QStringLiteral("Algerian"));
+        font.setPointSize(26);
+        labelTime->setFont(font);
         Test8_2AClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Test8_2AClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 30));
+        menuBar->setGeometry(QRect(0, 0, 600, 23));
         Test8_2AClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Test8_2AClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -62,7 +66,7 @@ public:
     void retranslateUi(QMainWindow *Test8_2AClass)
     {
         Test8_2AClass->setWindowTitle(QApplication::translate("Test8_2AClass", "Test8_2A", Q_NULLPTR));
-        labelTime->setText(QApplication::translate("Test8_2AClass", "TextLabel", Q_NULLPTR));
+        labelTime->setText(QApplication::translate("Test8_2AClass", "00:00:00", Q_NULLPTR));
     } // retranslateUi
 
 };
