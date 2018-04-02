@@ -8,7 +8,7 @@ Test8_2A::Test8_2A(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-	// 启动定时器, 指定时间间隔(毫秒） 
+	// 启动定时器, 指定时间间隔(毫秒）
 	m_timerId = startTimer(1000);
 }
 
@@ -21,13 +21,11 @@ void Test8_2A::timerEvent(QTimerEvent * event)
 	{
 		QTime now = QTime::currentTime(); //获取当前时间
 		QString text = now.toString("HH:mm:ss");
-		//qDebug() << text;
+		//qDebug() << text;  //输出
 
 		ui.labelTime->setText(text);
-
 		//::Sleep(5000);  //模拟卡住
 	}
-
 }
 
 
