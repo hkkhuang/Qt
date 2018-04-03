@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DlgSelect</class>
+ <widget class="QDialog" name="DlgSelect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>157</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>抽奖器-抽奖</string>
+  </property>
+  <widget class="QLabel" name="m_ctlDisplay">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>351</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>35</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 35pt &quot;Arial Black&quot;;
+color: rgb(0, 85, 0);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>13900000000</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_btnStart">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>71</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Test8_04.qrc">
+     <normaloff>:/start/Resources/play.png</normaloff>:/start/Resources/play.png</iconset>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="m_lstResult">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>30</y>
+     <width>241</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Test8_04.qrc"/>
+ </resources>
+ <connections/>
+</ui>

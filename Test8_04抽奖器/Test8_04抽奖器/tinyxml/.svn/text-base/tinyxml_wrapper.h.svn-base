@@ -1,0 +1,53 @@
+
+#ifndef _TINYXML_WRAPPER_H
+#define  _TINYXML_WRAPPER_H
+
+#include <stdio.h>
+#include <string.h>
+#include "tinyxml.h"
+
+inline const char* XmlChildText(TiXmlElement* parent, const char* child_name)
+{
+	TiXmlElement* child = parent->FirstChildElement(child_name);
+	if(child) 
+	{
+		const char* t = child->GetText();
+		if(t) return t;
+	}
+	return "";
+}
+
+inline int XmlChildInt(TiXmlElement* parent, const char* child_name)
+{
+	const char* t = XmlChildText(parent, child_name);
+	return atoi(t);
+}
+
+inline const char* XmlText(TiXmlElement* node)
+{
+	const char* t = node->GetText();
+	if(t) return t;
+	else return "";
+}
+
+inline void XmlAddChild(TiXmlElement* parent, const std::string& child, const std::string& value)
+{
+	TiXmlElement* leaf = new TiXmlElement(child);  
+	leaf->LinkEndChild( new TiXmlText(value));
+	parent->LinkEndChild( leaf );  	
+}
+
+inline void XmlAddChild(TiXmlElement* parent, const std::string& child, int value)
+{
+	char buf[32];
+	sprintf(buf,"%d", value);
+
+	TiXmlElement* leaf = new TiXmlElement(child);  
+	leaf->LinkEndChild( new TiXmlText(buf));
+	parent->LinkEndChild( leaf );  	
+}
+
+
+
+#endif
+
