@@ -9,8 +9,8 @@ DlgSelect::DlgSelect(QStringList* nubmers, QWidget *parent)
 	ui.setupUi(this);
 	m_nubmers = nubmers;
 	m_working = false;
-	m_iconStart = QIcon(":/Test8_04抽奖器/Resources/play.png");
-	m_iconStop = QIcon(":/Test8_04抽奖器/Resources/stop.png");
+	m_iconStart = QIcon("Resources/play.png");
+	m_iconStop = QIcon("Resources/stop.png");
 
 	// 初始化标识位
 	m_selected = 0;
@@ -59,6 +59,7 @@ int DlgSelect::onSelectNext()
 		m_now = 0;
 		m_timerId = startTimer(100);
 		ui.m_btnStart->setIcon(m_iconStop);
+		ui.m_btnStart->setText(GBK::ToUnicode("停止"));
 		m_working = true;
 	}
 	else
@@ -67,7 +68,7 @@ int DlgSelect::onSelectNext()
 		killTimer(m_timerId);
 		m_working = false;
 		ui.m_btnStart->setIcon(m_iconStart);
-
+		ui.m_btnStart->setText(GBK::ToUnicode("开始"));
 		// 
 		m_flags[m_now] = 1;
 		QString number = m_nubmers->at(m_now);
