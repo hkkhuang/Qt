@@ -3,14 +3,15 @@
 #include <QMessageBox>
 #include <QCloseEvent>  
 
+
 DlgSelect::DlgSelect(QStringList* nubmers, QWidget *parent)
 	: QDialog(parent)
 {
 	ui.setupUi(this);
 	m_nubmers = nubmers;
 	m_working = false;
-	m_iconStart = QIcon("Resources/play.png");
-	m_iconStop = QIcon("Resources/stop.png");
+	m_iconStart = QIcon(":Resources/play.png");
+	m_iconStop = QIcon(":Resources/stop.png");
 
 	// 初始化标识位
 	m_selected = 0;

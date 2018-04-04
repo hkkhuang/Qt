@@ -128,10 +128,16 @@
     <ClInclude Include="tinyxml\tinyxml.h">
       <Filter>tinyxml</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="tinyxml\Version.txt">
       <Filter>tinyxml</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Test8_04抽奖器.rc" />
   </ItemGroup>
 </Project>

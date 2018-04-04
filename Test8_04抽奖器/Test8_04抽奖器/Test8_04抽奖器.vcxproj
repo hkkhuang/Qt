@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GBK.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Source.h" />
     <ClInclude Include="tinyxml\tinystr.h" />
     <ClInclude Include="tinyxml\tinyxml.h" />
@@ -211,6 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="tinyxml\Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Test8_04抽奖器.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

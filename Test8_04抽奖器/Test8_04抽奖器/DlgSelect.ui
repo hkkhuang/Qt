@@ -54,7 +54,7 @@ background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="icon">
     <iconset resource="Test8_04.qrc">
-     <normaloff>:/start/Resources/play.png</normaloff>:/start/Resources/play.png</iconset>
+     <normaloff>:/Resources/play.png</normaloff>:/Resources/play.png</iconset>
    </property>
   </widget>
   <widget class="QListWidget" name="m_lstResult">

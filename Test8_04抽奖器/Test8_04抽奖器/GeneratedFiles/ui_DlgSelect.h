@@ -50,7 +50,7 @@ public:
         m_btnStart->setObjectName(QStringLiteral("m_btnStart"));
         m_btnStart->setGeometry(QRect(370, 30, 71, 111));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/start/Resources/play.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/Resources/play.png"), QSize(), QIcon::Normal, QIcon::Off);
         m_btnStart->setIcon(icon);
         m_lstResult = new QListWidget(DlgSelect);
         m_lstResult->setObjectName(QStringLiteral("m_lstResult"));

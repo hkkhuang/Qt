@@ -1,8 +1,6 @@
 <RCC>
-  <qresource prefix="start">
+  <qresource>
     <file>Resources/play.png</file>
-  </qresource>
-  <qresource prefix="stop">
     <file>Resources/stop.png</file>
   </qresource>
 </RCC>
