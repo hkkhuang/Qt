@@ -76,6 +76,7 @@ public:
         txtPwd = new QLineEdit(tab);
         txtPwd->setObjectName(QStringLiteral("txtPwd"));
         txtPwd->setGeometry(QRect(78, 90, 129, 20));
+        txtPwd->setEchoMode(QLineEdit::Password);
         label_2 = new QLabel(tab);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(20, 90, 53, 20));
