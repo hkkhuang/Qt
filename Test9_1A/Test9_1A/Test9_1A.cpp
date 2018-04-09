@@ -1,11 +1,10 @@
-#include "Test9_1A.h"
+ï»¿#include "Test9_1A.h"
 
 Test9_1A::Test9_1A(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-
-	//½¨Á¢Á¬½Ó
+	//å»ºç«‹è¿žæŽ¥
 	connect(ui.btnSave,SIGNAL(clicked()),this,SLOT(OnBtnSave()));
 }
 

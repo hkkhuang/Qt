@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_Test9_1A.h"
@@ -9,7 +9,7 @@ class Test9_1A : public QMainWindow
 
 public:
 	Test9_1A(QWidget *parent = Q_NULLPTR);
-
+//添加槽
 private slots:
 	int OnBtnSave();
 
