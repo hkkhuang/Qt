@@ -55,6 +55,15 @@
     <ClCompile Include="GeneratedFiles\qrc_Test9_2A.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MyPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MyPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Test9_2A.h">
@@ -66,9 +75,18 @@
     <CustomBuild Include="Test9_2A.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="MyPage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MyPage.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_Test9_2A.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MyPage.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

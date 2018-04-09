@@ -14,6 +14,7 @@ public:
 private slots:
 	int OnBtnPage1();
 	int OnBtnPage2();
+	int OnBtnPage3();
 private:
 	Ui::Test9_2AClass ui;
 };

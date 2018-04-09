@@ -38,6 +38,7 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *btnPage1;
     QPushButton *btnPage2;
+    QPushButton *btnPage3;
     QSpacerItem *verticalSpacer;
     QStackedWidget *stackedWidget;
     QWidget *page;
@@ -54,7 +55,7 @@ public:
     {
         if (Test9_2AClass->objectName().isEmpty())
             Test9_2AClass->setObjectName(QStringLiteral("Test9_2AClass"));
-        Test9_2AClass->resize(635, 375);
+        Test9_2AClass->resize(1487, 863);
         centralWidget = new QWidget(Test9_2AClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayout_2 = new QVBoxLayout(centralWidget);
@@ -76,6 +77,11 @@ public:
         btnPage2->setObjectName(QStringLiteral("btnPage2"));
 
         verticalLayout->addWidget(btnPage2);
+
+        btnPage3 = new QPushButton(centralWidget);
+        btnPage3->setObjectName(QStringLiteral("btnPage3"));
+
+        verticalLayout->addWidget(btnPage3);
 
         verticalSpacer = new QSpacerItem(20, 238, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -121,7 +127,7 @@ public:
         Test9_2AClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Test9_2AClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 635, 23));
+        menuBar->setGeometry(QRect(0, 0, 1487, 23));
         Test9_2AClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Test9_2AClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -143,6 +149,7 @@ public:
         Test9_2AClass->setWindowTitle(QApplication::translate("Test9_2AClass", "Test9_2A", Q_NULLPTR));
         btnPage1->setText(QApplication::translate("Test9_2AClass", "Page 1", Q_NULLPTR));
         btnPage2->setText(QApplication::translate("Test9_2AClass", "Page 2", Q_NULLPTR));
+        btnPage3->setText(QApplication::translate("Test9_2AClass", "page 3", Q_NULLPTR));
         textBrowser_2->setHtml(QApplication::translate("Test9_2AClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

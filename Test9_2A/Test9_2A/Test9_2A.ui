@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>635</width>
-    <height>375</height>
+    <width>1487</width>
+    <height>863</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,6 +30,13 @@
          <widget class="QPushButton" name="btnPage2">
           <property name="text">
            <string>Page 2</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnPage3">
+          <property name="text">
+           <string>page 3</string>
           </property>
          </widget>
         </item>
@@ -98,7 +105,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>635</width>
+     <width>1487</width>
      <height>23</height>
     </rect>
    </property>
@@ -116,7 +123,6 @@ p, li { white-space: pre-wrap; }
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="Test9_2A.qrc"/>
-  <include location="C:/Users/huang/.designer/backup/Test9_2A.qrc"/>
  </resources>
  <connections/>
 </ui>
