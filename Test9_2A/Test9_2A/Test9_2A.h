@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_Test9_2A.h"
@@ -9,7 +9,8 @@ class Test9_2A : public QMainWindow
 
 public:
 	Test9_2A(QWidget *parent = Q_NULLPTR);
-//Ìí¼Ó²Û
+
+//æ·»åŠ æ§½
 private slots:
 	int OnBtnPage1();
 	int OnBtnPage2();
