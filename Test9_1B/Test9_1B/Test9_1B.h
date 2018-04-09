@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <QtWidgets/QMainWindow>
 #include "ui_Test9_1B.h"
@@ -9,8 +9,7 @@ class Test9_1B : public QMainWindow
 
 public:
 	Test9_1B(QWidget *parent = Q_NULLPTR);
-
-//Ìí¼Ó²Û
+//æ·»åŠ æ§½
 private slots:
 	int OnBtnNew();
 	int OnBtnDelete();

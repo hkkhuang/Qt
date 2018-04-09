@@ -1,16 +1,15 @@
-#include "Test9_1B.h"
+ï»¿#include "Test9_1B.h"
 #include <QPlainTextEdit>
 Test9_1B::Test9_1B(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-
-	//½¨Á¢Á¬½Ó
+	//å»ºç«‹è¿žæŽ¥
 	connect(ui.btnNew, SIGNAL(clicked()), this, SLOT(OnBtnNew()));
 	connect(ui.btnDelete, SIGNAL(clicked()), this, SLOT(OnBtnDelete()));
 }
 
-//ÐÂ½¨Ìí¼Ó±êÇ©Ò³
+//æ–°å»ºæ·»åŠ æ ‡ç­¾é¡µ
 int Test9_1B::OnBtnNew()
 {
 	QPlainTextEdit* page = new QPlainTextEdit();
@@ -18,7 +17,7 @@ int Test9_1B::OnBtnNew()
 	return 0;
 }
 
-//É¾³ýµ±Ç°±êÇ©Ò³
+//åˆ é™¤å½“å‰æ ‡ç­¾é¡µ
 int Test9_1B::OnBtnDelete()
 {
 	int index = ui.tabWidget->currentIndex();
