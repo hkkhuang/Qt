@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="TTest10_1A">
+    <file>Resources/save.png</file>
+    <file>Resources/help.png</file>
+    <file>Resources/setting.png</file>
+    <file>Resources/new-file.png</file>
+  </qresource>
+</RCC>
