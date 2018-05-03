@@ -1,4 +1,4 @@
-#include "MyWidget.h"
+ï»¿#include "MyWidget.h"
 #include <QPainter>
 MyWidget::MyWidget(QWidget *parent)
 	: QFrame(parent)
@@ -12,18 +12,18 @@ MyWidget::~MyWidget()
 {
 }
 
-//Ä¿±ê¾ØÕó°´ÕÕ±ÈÀıÌî³äµ½Ô´¾ØÕó ·µ»ØÊµ¼ÊÎ»ÖÃtarget
+//ç›®æ ‡çŸ©é˜µæŒ‰ç…§æ¯”ä¾‹å¡«å……åˆ°æºçŸ©é˜µ è¿”å›å®é™…ä½ç½®target
 inline QRect scale(QRect source, QRect target)
 {
-	//»ñÈ¡Ä¿±ê¾ØĞÎµÄ³¤¿í
+	//è·å–ç›®æ ‡çŸ©å½¢çš„é•¿å®½
 	int target_w = target.width();
 	int target_h = target.height();
 
-	//»ñÈ¡Ô´¾ØĞÎµÄ³¤¿í
+	//è·å–æºçŸ©å½¢çš„é•¿å®½
 	int image_w = source.width();
 	int image_h = source.height();
 
-	//ÌØÊâ´¦Àí
+	//ç‰¹æ®Šå¤„ç†
 	if (image_w <= 0)
 	{
 		image_w = 1;
@@ -33,9 +33,9 @@ inline QRect scale(QRect source, QRect target)
 		image_h = 1;
 	}
 
-	//µÈ±ÈÀı Ëõ·Å
-	int scaled_w = target_w; //Ô´
-	int scaled_h = image_h * target_w / image_w; //height ¸ù¾İ Ô´ÓëÄ¿±êµÄwidth±ÈÀıÈ·¶¨ 
+	//ç­‰æ¯”ä¾‹ ç¼©æ”¾
+	int scaled_w = target_w; //æº
+	int scaled_h = image_h * target_w / image_w; //height æ ¹æ® æºä¸ç›®æ ‡çš„widthæ¯”ä¾‹ç¡®å®š 
 
 	if (scaled_h > target_h)
 	{
@@ -53,18 +53,18 @@ inline QRect scale(QRect source, QRect target)
 void MyWidget::paintEvent(QPaintEvent *event)
 {
 	QPainter painter(this);
-	//´°Ìå³¤¿í
+	//çª—ä½“é•¿å®½
 	int width = this->width();
 	int height = this->height();
 
-	//QRect target(0, 0, width / 2, height / 2); //Ä¿±ê¾ØĞÎ
-	QRect target(0, 0, width, height); //Ä¿±ê¾ØĞÎ
+	//QRect target(0, 0, width / 2, height / 2); //ç›®æ ‡çŸ©å½¢
+	QRect target(0, 0, width, height); //ç›®æ ‡çŸ©å½¢
 
-	//»ñÈ¡µ½Í¼Æ¬µÄwidth£¬height
+	//è·å–åˆ°å›¾ç‰‡çš„widthï¼Œheight
 	int img_width = m_picture.width();
 	int img_height = m_picture.height();
 
-	QRect source(0, 0, img_width, img_height);//Ô´¾ØĞÎ È·¶¨»æÖÆÍ¼ÏñµÄÄÄĞ©²¿·Ö
+	QRect source(0, 0, img_width, img_height);//æºçŸ©å½¢ ç¡®å®šç»˜åˆ¶å›¾åƒçš„å“ªäº›éƒ¨åˆ†
 
 	if (0)
 	{
@@ -72,7 +72,7 @@ void MyWidget::paintEvent(QPaintEvent *event)
 	}
 	else
 	{
-		//Ëø¶¨³¤¿í±È
+		//é”å®šé•¿å®½æ¯”
 		QRect scaled_target = scale(source, target);
 		painter.drawPixmap(scaled_target, m_picture, source);
 	}
