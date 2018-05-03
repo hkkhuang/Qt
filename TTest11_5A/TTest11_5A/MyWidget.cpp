@@ -3,6 +3,7 @@
 MyWidget::MyWidget(QWidget *parent)
 	: QFrame(parent)
 {
+	//添加图片资源方式 两种
 	//m_picture.load("c:/test.jpg");
 
 	m_picture.load(":/TTest11_5A/Resources/test.jpg");
