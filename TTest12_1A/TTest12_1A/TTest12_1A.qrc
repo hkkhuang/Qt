@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="TTest12_1A">
+    <file>Resources/apple.png</file>
+    <file>Resources/banana.png</file>
+    <file>Resources/book.jpg</file>
+    <file>Resources/heart.jpg</file>
+  </qresource>
+</RCC>
