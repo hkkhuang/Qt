@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="TTest12_6A">
+    <file>Resources/folder.png</file>
+    <file>Resources/file.png</file>
+  </qresource>
+</RCC>
