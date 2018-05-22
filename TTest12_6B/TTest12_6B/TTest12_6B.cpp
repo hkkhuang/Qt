@@ -1,4 +1,4 @@
-#include "TTest12_6B.h"
+ï»¿#include "TTest12_6B.h"
 
 TTest12_6B::TTest12_6B(QWidget *parent)
 	: QMainWindow(parent)
@@ -6,8 +6,8 @@ TTest12_6B::TTest12_6B(QWidget *parent)
 	ui.setupUi(this);
 
 	ui.tableWidget->setColumnCount(3);
-	//ÉèÖÃË®Æ½·½ÏòµÄ±êÌâ
-
+	
+	//è®¾ç½®æ°´å¹³æ–¹å‘çš„æ ‡
 	QStringList headers;
 	headers.append("id");
 	headers.append("name");
