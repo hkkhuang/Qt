@@ -19,7 +19,7 @@ TTest12_6A::TTest12_6A(QWidget *parent)
 
 	QIcon icon_folder(":/TTest12_6A/Resources/folder.png");
 	QIcon icon_file(":/TTest12_6A/Resources/file.png");
-
+	 
 	// ≤Â»Î ˝æ›
 	AddItem("aaa.txt", "2015-06-26 07:59:00", "text file", 1242, icon_file);
 	AddItem("bbb.mp4", "2015-06-25 14:51:00", "video file", 98990098, icon_file);
