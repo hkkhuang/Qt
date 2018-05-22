@@ -38,7 +38,7 @@ public:
     {
         if (TTest12_6BClass->objectName().isEmpty())
             TTest12_6BClass->setObjectName(QStringLiteral("TTest12_6BClass"));
-        TTest12_6BClass->resize(600, 400);
+        TTest12_6BClass->resize(468, 327);
         centralWidget = new QWidget(TTest12_6BClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayout = new QVBoxLayout(centralWidget);
@@ -47,13 +47,16 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         tableWidget = new QTableWidget(centralWidget);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+        tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+        tableWidget->horizontalHeader()->setStretchLastSection(true);
 
         verticalLayout->addWidget(tableWidget);
 
         TTest12_6BClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(TTest12_6BClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 23));
+        menuBar->setGeometry(QRect(0, 0, 468, 23));
         TTest12_6BClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(TTest12_6BClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
